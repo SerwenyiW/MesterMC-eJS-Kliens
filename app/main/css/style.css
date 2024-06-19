@@ -1,0 +1,132 @@
+body, html {
+    margin-top: 30px;
+    padding: 0;
+    height: 400px;
+    width: 930px;
+    min-width: 930px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+
+body {
+    -webkit-app-region: drag;
+}
+
+#mainContainer {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+#leftContent {
+    flex: 1.6;
+}
+
+#leftContent img {
+    height: 97.1px;
+    width: 279px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+#centerContent {
+    background-image: url("../../img/dirt_bg1.png");
+    flex: 4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#centerContent h2 {
+    margin-top: 30px;
+}
+
+#newsBtn {
+    position: relative;
+    float: right;
+    top: -10px;
+    right: 20px;
+}
+
+#newsBtn button {
+    background-color: rgb(134,134,135);
+    color: rgb(58,58,58);
+    font-size: 20px;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid rgb(93, 94, 107);
+    cursor: pointer;
+}
+
+#rightContent {
+    flex: 1.7;
+    background-image: url("../../img/dirt_bg2.png");
+}
+
+#rightContent input {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#rightContent input:not(:first-of-type) {
+    margin-top: 20px;
+}
+
+#versionText {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#versionSelect {
+    width: 90%;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+#loginBtn {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
+}
+
+#mmclogo {
+    position: relative;
+    top: -30px;
+    right: -10px;
+}
+
+#closeBtn {
+    position: relative;
+    float: right;
+    top: -10px;
+    right: -20px;
+    background-color: rgb(220,1,1);
+    color: rgb(135,1,2);
+    font-size: 25px;
+    height: 28px;
+    width: 28px;
+    padding: 0;
+    text-align: center;
+    border-radius: 1px;
+    border: 2px solid rgb(161,11,17);
+    cursor: pointer;
+}
+
+#closeBtn:hover {
+    background-color: rgb(184, 185, 185);
+}
+
+#closeBtn, #newsBtn, #leftContent img, #newsContainer img, #username, #password, #loginBtn, #versionSelect {
+    -webkit-app-region: no-drag;
+}
